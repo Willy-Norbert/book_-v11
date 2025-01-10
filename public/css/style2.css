@@ -1,0 +1,125 @@
+.container1 {
+  overflow: hidden !important;
+ }
+ body{
+   font-family: "Poppins", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+ }
+ .container0{
+   background-image: url(images/profiles.png); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   width: 200px;
+   height: 200px;
+   border-radius:100% ;
+   position: relative;
+   top: 30px;
+ }
+ 
+ 
+ .link.active {
+  font-size: 18px;
+  font-weight: 100px;
+  color: black;
+ } */
+ /* .link.active:hover{
+   background-color: rgb(255, 255, 255);
+   color: #5585E3;
+   width: 40px;
+ } */
+ 
+ .container3 {
+   position: relative;
+   left: -90px;
+   background: #5585E3;
+   width: 30px;
+   height: 10px;
+   display: none; /* Initially hide the container */
+ }
+ 
+ /* When .col1 is hovered, show .container3 */
+ .col1:hover .container3 {
+   display: block;
+ }
+ 
+ /* When .col1 is clicked, keep .container3 visible */
+ .col1.clicked .container3 {
+   display: block;
+ }
+ 
+ .background1{
+   background-image: url(images/227140206_926341961557706_2034145323457323292_n.jpg); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   height: 500px!important;
+ }
+ .background2{
+   background-image: url(images/mysterious.jpg); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   height: 500px!important;
+ }
+ .background11 {
+   position: relative;
+   background-image: url('images/Slide1.PNG'); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-position: -120px;
+   height: 500px !important;
+   filter: brightness(80%);
+   transition: width 1.5s, height 1.5s;
+ }
+ 
+ .background11::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(244, 7, 7, 0.3); 
+ } 
+ 
+ .background11 .content {
+   position: relative;
+   color: white;
+   padding: 20px;
+   top: 300px;
+   font-size: 24px; 
+   font-weight: bold; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to make text stand out */
+ }
+ .background11:hover {
+   width: 650px; /* New width on hover */
+   height:600px !important; /* New height on hover */
+ }
+ .logo-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #216bc5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .grow-logo {
+   animation: grow 2s ease-in-out;
+ }
+ @keyframes grow {
+   from {
+       transform: scale(0.3);
+   }
+   to {
+       transform: scale(0.5);
+   }
+ }
+ body.loaded .logo-container {
+   display: none;
+ }
+ nav{
+   position: relative;
+   z-index: 20000;
+ }
